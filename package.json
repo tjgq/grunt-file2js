@@ -1,0 +1,16 @@
+{
+  "name": "grunt-file2js",
+  "description": "A Grunt plugin for converting arbitrary files into JavaScript assignments.",
+  "version": "0.0.0",
+  "author": "Tiago Quelhas",
+  "license": "BSD",
+  "engines": {
+    "node": ">= 0.8.0"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.1"
+  },
+  "dependencies": {
+    "str2js": "git://github.com/tjgq/str2js.git"
+  }
+}
