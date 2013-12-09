@@ -9,8 +9,11 @@ module.exports = function(grunt) {
     });
 
     this.files.forEach(function(file) {
-      var str = grunt.file.read(file.src[0]);
-      str = str2js(opts.obj, file.src[0], str);
+      var str = "";
+      file.src.forEach(function(srcFile) {
+        var f = grunt.file.read(srcFile);
+        str += str2js(opts.obj, srcFile, f);
+      });
       grunt.file.write(file.dest, str);
     });
 
